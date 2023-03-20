@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: #130563;
+    color: white;
+}
+
+.nav > Link > li:hover {
+    color: #eb4034;
+}
+.logo{
+    font-size: 30px;
+}
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+
+
+.home,
+.search,
+.product,
+.contact,
+.about,
+.login {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.login{
+    border: 1px solid yellow;
+    border-radius: 5px;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 780px) {
+    .log{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: #130563;
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+.home,
+.search,
+.product,
+.contact,
+.about,
+.login {
+        color: white;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+}   
+    .login{
+        border: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        background-color: #130563;
+        border: none;
+        outline: none;
+        top: 20px;
+        right: 25px;
+    }
+}
